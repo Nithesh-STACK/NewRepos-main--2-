@@ -1,9 +1,9 @@
 import React from "react";
-import axios from "axios"
-import { v4 as uuid } from 'uuid'
+import axios from "axios";
+import { v4 as uuid } from "uuid";
+
+
 const ServiceCall=()=>{
-
-
 const RegisterUser=()=>{
     //SIGNAL R IMPLEMENTATION
 }
