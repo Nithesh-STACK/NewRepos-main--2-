@@ -4,9 +4,9 @@ import { v4 as uuid } from "uuid";
 
 
 const ServiceCall=()=>{
-const RegisterUser=()=>{
-    //SIGNAL R IMPLEMENTATION
-}
+// const RegisterUser=()=>{
+//     //SIGNAL R IMPLEMENTATION
+// }
 
 const ProcessIdInvokeCall=()=>{
 
@@ -23,12 +23,12 @@ let data={
 }
 let url="https://RASServiceBus.servicebus.windows.net/rasqueue/messages";
 let res=axios.post(url,data,{headers:headers}).then((data)=>{
-console.log("success");
+console.log("success",data);
 }).
 catch((e)=>{
 console.log(e);
 })
-
+console.log(res);
 }
 return  <div className="container">
 <div className="register-container"><p>Register User:</p>

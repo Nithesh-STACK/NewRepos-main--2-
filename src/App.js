@@ -1,8 +1,7 @@
-import React, {useCallback, useEffect, useState} from 'react'
-import {useDropzone} from 'react-dropzone'
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
-import {HubConnectionBuilder, LogLevel} from "@microsoft/signalr";
+// import {HubConnectionBuilder, LogLevel} from "@microsoft/signalr";
 import ServiceCall from './servicebuspostcall';
 
 function App() {
