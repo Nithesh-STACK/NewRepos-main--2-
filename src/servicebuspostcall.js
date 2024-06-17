@@ -24,8 +24,7 @@ let data={
 let url="https://RASServiceBus.servicebus.windows.net/rasqueue/messages";
 let res=axios.post(url,data,{headers:headers}).then((data)=>{
 console.log("success",data);
-}).
-catch((e)=>{
+}).catch((e)=>{
 console.log(e);
 })
 console.log(res);
