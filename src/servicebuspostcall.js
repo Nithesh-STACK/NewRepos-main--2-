@@ -1,7 +1,5 @@
 import React from "react";
-import axios from "axios";
 import { v4 as uuid } from "uuid";
-
 
 const ServiceCall=()=>{
 // const RegisterUser=()=>{
@@ -22,7 +20,7 @@ let data={
     
 }
 let url="https://RASServiceBus.servicebus.windows.net/rasqueue/messages";
-let res=axios.post(url,data,{headers:headers}).then((data)=>{
+let res=fetch(url,data,{headers:headers}).then((data)=>{
 console.log("success",data);
 }).catch((e)=>{
 console.log(e);
